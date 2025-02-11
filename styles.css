@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #00265f, #033377, #054090, #084eaa, #085cc5);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #0d47a1;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    background: #f3f4f6;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff5722;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #f00b03;
+}
+
+.error-message {
+    position: fixed;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, #003b93, #3c3086, #532377, #611466, #690055);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    padding: 7% 15%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.close-error {
+    position: absolute;
+    top:0;
+    right: 0;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+}
+
+.invite-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #e74c3c;
+    width: 100%;
+    max-width: 500px;
+    display: none;
+}
+
+.invite-header {
+    color: #e74c3c;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.invite-subheader {
+    color: #666;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.event-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.event-details {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.event-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-location {
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: center;
+}
